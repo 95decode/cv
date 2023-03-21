@@ -1,6 +1,7 @@
 import React from "react";
 import ImageCard from "@/components/ImageCard";
 import UpButton from "@/components/UpButton";
+import DownButton from "@/components/DownButton";
 import Banner from "@/components/Banner";
 import Card from "@/components/Card";
 
@@ -18,16 +19,43 @@ const HomePage = () => {
           />
         </div>
       </div>
-        {/*<h2 style={{ margin: 0 }}>Education</h2>
-        <p style={{ margin: 0 }}>Bachelor of Science in Electronic Engineering</p>
-        <p style={{ margin: 0 }}>Master of Science in Electronic Engineering</p>
-        <p style={{ margin: 0 }}>Sogang University, Seoul, Korea</p>*/}
       <div style={{ textAlign: "center" }}>
         <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
-          <Card text="Contact"/>
-          <Card text="Education"/>
-          <Card text="Skills"/>
-          <Card text="test"/>
+          <Card textElements={[
+            { text: "Contact", level: "h2" },
+            { text: "　", level: "h4" },
+            { text: "+82-10-3790-8221", level: "h4" },
+            { text: "95decode@gmail.com", level: "h4" },
+          ]} imageLinks={[
+            { src: "/images/github.png", href: "https://github.com/95decode", alt: "Example 1" },
+            { src: "/images/linkedin.png", href: "https://www.linkedin.com/in/95decode", alt: "Example 2" },
+            { src: "/images/ethereum.png", href: "https://example1.com", alt: "Example 1" },
+          ]}/>
+          <Card textElements={[
+            { text: "Education", level: "h2" },
+            { text: "　", level: "h4" },
+            { text: "B.S.E. in Electronic Engineering", level: "h4" },
+            { text: "M.S.E. in Electronic Engineering", level: "h4" },
+            { text: "Sogang University, Seoul, Korea", level: "h4" },
+          ]} imageLinks={[
+            { src: "/images/sogang.png", href: "https://example1.com", alt: "Example 1" },
+          ]}/>
+          <Card textElements={[
+            { text: "Skills", level: "h2" },
+            { text: "　", level: "h4" },
+            { text: "Typescript", level: "h4" },
+            { text: "Solidity", level: "h4" },
+            { text: "Go", level: "h4" },
+            { text: "Python", level: "h4" },
+          ]} imageLinks={[
+            { src: "/images/typescript.png", alt: "typescript" },
+            { src: "/images/solidity.png", alt: "solidity" },
+            { src: "/images/go.png", alt: "go" },
+            { src: "/images/python.png", alt: "python" },
+          ]}/>
+          <Card textElements={[
+            { text: "ETC", level: "h2" },
+          ]} imageLinks={[]}/>
         </div>
       </div>
       <div style={{ textAlign: "center" }}>
@@ -180,7 +208,7 @@ const HomePage = () => {
         <h3>Extation Detail Description</h3>
         <p>{/* ... */}</p>
       </div>
-      <UpButton />
+      <UpButton /><DownButton />
     </div>
   );
 };

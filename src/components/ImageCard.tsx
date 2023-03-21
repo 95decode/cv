@@ -24,7 +24,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ imageSrc, alt, text, target }) =>
       <div
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        style={{ width: "300px", height: "300px", margin: "50px", position: "relative", overflow: "hidden" }}
+        style={{ width: "300px", height: "300px", margin: "30px", position: "relative", overflow: "hidden" }}
       >
         <img
           src={imageSrc}

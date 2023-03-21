@@ -1,13 +1,74 @@
 import React from "react";
 
-interface CardProps {
+interface TextElement {
   text: string;
+  level: "h1" | "h2" | "h3" | "h4";
 }
 
-const Card: React.FC<CardProps> = ({ text }) => {
+interface ImageLink {
+  src: string;
+  href?: string;
+  alt: string;
+}
+
+interface CardProps {
+  textElements: TextElement[];
+  imageLinks?: ImageLink[];
+}
+
+const Card: React.FC<CardProps> = ({ textElements, imageLinks }) => {
   return (
-    <div style={{ width: "300px", height: "300px", margin: "50px", position: "relative", overflow: "hidden", backgroundColor: "#f8f9fa" }}>
-        <p style={{ margin: 0, position: "absolute", bottom: "50%", left: "50%", transform: "translateX(-50%)" }}>{text}</p>
+    <div
+      style={{
+        width: "300px",
+        height: "300px",
+        margin: "30px",
+        position: "relative",
+        overflow: "hidden",
+        backgroundColor: "#f8f9fa",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        padding: "1rem",
+      }}
+    >
+      <div style={{ alignSelf: "center" }}>
+        {textElements.map((element, index) => {
+          const Heading = element.level;
+          return (
+            <Heading key={index} style={{ textAlign: "center", margin: "5px" }}>
+              {element.text}
+            </Heading>
+          );
+        })}
+      </div>
+      {imageLinks && (
+        <div
+          style={{
+            display: "flex",
+            alignSelf: "center",
+            flexDirection: "row",
+            alignItems: "flex-end",
+            justifyContent: "center",
+          }}
+        >
+          {imageLinks.map((imageLink, index) => (
+            <a
+              key={index}
+              href={imageLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-block", margin: "5px", textDecoration: "none" }}
+            >
+              <img
+                src={imageLink.src}
+                alt={imageLink.alt}
+                style={{ width: "50px", height: "50px" }}
+              />
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

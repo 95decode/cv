@@ -6,16 +6,16 @@ interface TextElement {
 }
 
 interface BannerProps {
-  textElements: TextElement[];
+    textElements: TextElement[];
 }
 
 const Banner: React.FC<BannerProps> = ({ textElements }) => {
   return (
     <div
       style={{
-        width: "1500px",
+        width: "1380px",
         height: "300px",
-        margin: "50px",
+        margin: "20px",
         display: "flex", position: "relative",
         flexDirection: "column",
         alignItems: "center",

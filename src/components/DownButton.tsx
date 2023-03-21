@@ -1,18 +1,18 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 
-const UpButton: React.FC = () => {
-  const scrollToTop = () => {
-    scroll.scrollToTop({ duration: 300 });
+const DownButton: React.FC = () => {
+  const scrollToBottom = () => {
+    scroll.scrollToBottom({ duration: 300 });
   };
 
   return (
     <button
-      onClick={scrollToTop}
+      onClick={scrollToBottom}
       style={{
         position: "fixed",
-        bottom: "20px",
-        right: "20px",
+        top: "20px",
+        left: "20px",
         borderRadius: "50%",
         backgroundColor: "#000000",
         color: "white",
@@ -22,9 +22,9 @@ const UpButton: React.FC = () => {
         fontSize: "1.2em",
       }}
     >
-      &#x25B2;
+      &#x25BC;
     </button>
   );
 };
 
-export default UpButton;
+export default DownButton;
