@@ -6,21 +6,22 @@ interface TextElement {
 }
 
 interface BannerProps {
-    textElements: TextElement[];
+  textElements: TextElement[];
 }
 
 const Banner: React.FC<BannerProps> = ({ textElements }) => {
   return (
     <div
       style={{
-        width: "1380px",
+        width: "1360px",
         height: "300px",
-        margin: "20px",
+        margin: "40px",
         display: "flex", position: "relative",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#f8f9fa",
+        borderRadius: "15px"
       }}
     >
       {textElements.map((element, index) => {

@@ -11,16 +11,16 @@ interface ImageLink {
   alt: string;
 }
 
-interface CardProps {
+interface DescriptionProps {
   textElements: TextElement[];
   imageLinks?: ImageLink[];
 }
 
-const Card: React.FC<CardProps> = ({ textElements, imageLinks }) => {
+const Description: React.FC<DescriptionProps> = ({ textElements, imageLinks }) => {
   return (
     <div
       style={{
-        width: "400px",
+        width: "1360px",
         height: "300px",
         margin: "40px",
         position: "relative",
@@ -74,4 +74,4 @@ const Card: React.FC<CardProps> = ({ textElements, imageLinks }) => {
   );
 };
 
-export default Card;
+export default Description;
