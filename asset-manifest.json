@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cv/static/css/main.72d06e98.css",
+    "main.js": "/cv/static/js/main.22034201.js",
+    "static/media/kepco.png": "/cv/static/media/kepco.3ba3ba307efd13cbc112.png",
+    "static/media/aftmarket.png": "/cv/static/media/aftmarket.d98b9f568630ba901cad.png",
+    "static/media/kipo.png": "/cv/static/media/kipo.1e394f7f83f0f59c6727.png",
+    "static/media/shinhan.png": "/cv/static/media/shinhan.a33102af15ae9c60f575.png",
+    "static/media/python.png": "/cv/static/media/python.4f5f52c67194dc46e313.png",
+    "static/media/kip97.png": "/cv/static/media/kip97.a25d3ad8cf0c38cd11e8.png",
+    "static/media/extation.png": "/cv/static/media/extation.631af22014fe2b71dd9a.png",
+    "static/media/sogang.png": "/cv/static/media/sogang.0f058351dd9424c56e2d.png",
+    "static/media/sara.png": "/cv/static/media/sara.520a00ac658efe843ece.png",
+    "static/media/solidity.png": "/cv/static/media/solidity.5f9c5a2293b5bed49bc2.png",
+    "static/media/bcee.png": "/cv/static/media/bcee.917ad8cc7d130d653362.png",
+    "static/media/go.png": "/cv/static/media/go.6a3cd1884425f3b03c7d.png",
+    "static/media/linkedin.png": "/cv/static/media/linkedin.f1d668322dd800064ae5.png",
+    "static/media/Typescript.png": "/cv/static/media/Typescript.415b406109dfe385d86c.png",
+    "index.html": "/cv/index.html",
+    "main.72d06e98.css.map": "/cv/static/css/main.72d06e98.css.map",
+    "main.22034201.js.map": "/cv/static/js/main.22034201.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72d06e98.css",
+    "static/js/main.22034201.js"
+  ]
+}
